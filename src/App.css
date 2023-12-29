@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+
+.welcomeRaccoon {
+  margin-top: 14em;
+  height: 55vh;
+  width: 50vw;
+  border-radius: 50rem;
+  }
