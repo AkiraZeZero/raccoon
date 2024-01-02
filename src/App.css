@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .welcomeRaccoon {
@@ -7,4 +8,25 @@
   height: 55vh;
   width: 50vw;
   border-radius: 50rem;
-  }
+}
+
+.startQuiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.startBtn {
+  background-color: aquamarine;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 56px;
+  letter-spacing: 3px;
+  
+}
