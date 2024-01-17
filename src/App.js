@@ -8,7 +8,6 @@ function App() {
       <div className='startQuiz'>
         <Quiz/>
       </div>
-      <button className='startBtn'>Start!</button>
     </div>
   );
 }

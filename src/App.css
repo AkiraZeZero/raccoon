@@ -29,7 +29,7 @@ HTML{
   justify-content: center;
   align-items: center;
 }
-.startBtn {
+/* .startBtn {
   background-color: aquamarine;
   cursor: pointer;
   display: flex;
@@ -43,7 +43,7 @@ HTML{
   font-size: 56px;
   letter-spacing: 3px;
   
-}
+} */
 
 .quizBox {
   
