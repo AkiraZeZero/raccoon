@@ -39,18 +39,26 @@ const Quiz = () => {
     }
   };
 
+  const addLeadingZero = (number) => (number > 9 ? number : `0${number}`)
+
   return (
     <div className="quizBox">
       <h1>Quiz Box</h1>
       <h2>{question}</h2>
       <ul>
         {choices.map((answer, index) => (
-          <li onClick={() => onAnswerSelected(answer, index)} key={answer}  className={selectedAnswerIndex === index ? 'selectedAnswer' : null}>
+          <li
+            onClick={() => onAnswerSelected(answer, index)}
+            key={answer}
+            className={selectedAnswerIndex === index ? "selectedAnswer" : null}
+          >
             {answer}
           </li>
         ))}
       </ul>
-      <button onClick={onClickNext}>Next!</button>
+      <button onClick={onClickNext} disabled={selectedAnswerIndex === null}>
+        {activeQuestion === questions.length - 1 ? "Finish!" : "Next!"}
+      </button>
     </div>
   );
 };
