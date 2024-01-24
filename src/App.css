@@ -1,43 +1,96 @@
-HTML{
-  background-color: lavender;
-}
-.App {
-  text-align: center;
-}
-
-.quiz {
-  padding: 20px 0;
-}
-
-.welcomeRaccoon {
-  margin-top: 14em;
-  height: 55vh;
-  width: 50vw;
-  border-radius: 50rem;
-}
-
-.startQuiz {
+body {
+  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+  color: #11052c;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 0;
+  padding: 0 30px;
 }
-/* .startBtn {
-  background-color: aquamarine;
-  cursor: pointer;
-  display: flex;
-  border: none;
-  border-radius: 1rem;
-  color: white;
-  padding: 20px 35px;
-  text-align: center;
+
+.quizBox {
+  max-width: 500px;
+  min-width: 250px;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-top: 100px;
+  padding: 30px 60px;
+}
+
+.quizBox .activeQuestionNumb {
+  font-size: 32px;
+  font-weight: 500;
+  color: #800080;
+}
+
+.quizBox .totalQuestion {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e0dee3;
+}
+
+.quizBox h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  cursor: default;
+}
+
+.quizBox ul {
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.quizBox ul li {
   text-decoration: none;
-  display: inline-block;
-  font-size: 56px;
-  letter-spacing: 3px;
-  
-} */
+  list-style: none;
+  color: #2d264b;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 11px;
+  margin-top: 15px;
+  cursor: pointer;
+}
 
 .quizBox ul .selectedAnswer {
   background: #ffd6ff;
   border: 1px solid #800080;
+}
+
+.quizBox button {
+  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+  border-radius: 9px;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px 42px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.quizBox button:disabled {
+  background: #e7e8e9;
+  color: #9fa3a9;
+  cursor: not-allowed;
+}
+
+.result h3 {
+  font-size: 24px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  cursor: default;
+}
+
+.result p {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: default;
+}
+
+.result p span {
+  color: #800080;
+  font-size: 22px;
+  cursor: default;
 }

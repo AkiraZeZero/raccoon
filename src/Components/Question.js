@@ -1,7 +1,7 @@
 const quiz = {
     topic: "Raccoons Server",
-    totalQuestions: 5,
-    perQuestionScore: 5,
+    level: "Easy Peasy",
+    perQuestionScore: 1,
     questions:[
     {
         question: "What is the server mascot?",
@@ -20,8 +20,8 @@ const quiz = {
     },
     {
         question: "Who dies most in our Minecraft server?",
-        choices: ["AkiraZeZero", "Murkderose", "Cato", "Dara"],
-        correctAnswer: "Cato",
+        choices: ["AkiraZeZero", "Murkderose", "0_Cato_0", "Dara_run"],
+        correctAnswer: "0_Cato_0",
     },
     { 
         question: "What does 'TFT' stand for?",
@@ -39,14 +39,50 @@ const quiz = {
         correctAnswer: "Pokemon Unite",
     },
     {
-        question: "",
-        choices: ["", "", "", ""],
-        correctAnswer: "",
-    },{
-        question: "",
-        choices: ["", "", "", ""],
-        correctAnswer: "",
+        question: "Who made the really big moon in our Minecraft server?",
+        choices: ["Bees_In_Da_Trap", "Murkderose", "Playboytravo","SonicBliss" ],
+        correctAnswer: "Bees_In_Da_Trap",
     },
+    {
+        question: "Who is the youngest member in our server?",
+        choices: ["Josue-lacks-a- lot", "Alexa12344", "Taylor","Ryder DaBoss" ],
+        correctAnswer: "Alexa12344",
+    },
+    {
+        question: "What member in our server is the 'Meme-a-saurus'",
+        choices: ["Abrillion", "Dara_run", "Alantheonly", "Twistedcrater"],
+        correctAnswer: "Abrillion",
+    },
+    {
+        question: "How old is Sonic the Hedgehog?",
+        choices: ["12", "18", "16", "15"],
+        correctAnswer: "15",
+    },
+    {
+        question: "What pokemon is considered 'Murkderose's' pokemon when playing pokemon unite?",
+        choices: ["Lapras", "Goodra", "Slowbro", "Dragonite"],
+        correctAnswer: "Goodra",
+    },
+    {
+        question: "Who NEVER rage quits?",
+        choices: ["AkiraZeZero", "0_Cato_0", "Bees_In_Da_Trap", "Playboytravo"],
+        correctAnswer: "0_Cato_0",
+    },
+    // {
+    //     question: "",
+    //     choices: ["", "", "", ""],
+    //     correctAnswer: "",
+    // },
+    // {
+    //     question: "",
+    //     choices: ["", "", "", ""],
+    //     correctAnswer: "",
+    // },
+    // {
+    //     question: "",
+    //     choices: ["", "", "", ""],
+    //     correctAnswer: "",
+    // },
 ]}
 
 export default quiz

@@ -16,16 +16,23 @@ const Quiz = () => {
   const { question, choices, correctAnswer } = questions[activeQuestion];
 
   const onClickNext = () => {
+    setSelectedAnswerIndex(null);
     setActiveQuestion((prev) => prev + 1);
     setResult((prev) =>
       selectedAnswer
         ? {
             ...prev,
-            score: prev.score + 5,
+            score: prev.score + 1,
             correctAnswers: prev.correctAnswers + 1,
           }
         : { ...prev, wrongAnswers: prev.wrongAnswers + 1 }
-    );
+    )
+    if (activeQuestion !== questions.length - 1) {
+        setActiveQuestion((prev) => prev + 1)
+    } else {
+        setActiveQuestion(0)
+        setShowResult(true)
+    }
   };
 
   const onAnswerSelected = (answer, index) => {
@@ -39,26 +46,60 @@ const Quiz = () => {
     }
   };
 
-  const addLeadingZero = (number) => (number > 9 ? number : `0${number}`)
+  const addLeadingZero = (number) => (number > 9 ? number : `0${number}`);
 
   return (
     <div className="quizBox">
-      <h1>Quiz Box</h1>
-      <h2>{question}</h2>
-      <ul>
-        {choices.map((answer, index) => (
-          <li
-            onClick={() => onAnswerSelected(answer, index)}
-            key={answer}
-            className={selectedAnswerIndex === index ? "selectedAnswer" : null}
-          >
-            {answer}
-          </li>
-        ))}
-      </ul>
-      <button onClick={onClickNext} disabled={selectedAnswerIndex === null}>
-        {activeQuestion === questions.length - 1 ? "Finish!" : "Next!"}
-      </button>
+      {!showResult ? (
+        <div>
+          <div>
+            <span className="activeQuestionNumb">
+              {addLeadingZero(activeQuestion + 1)}
+            </span>
+            <span className="totalQuestion">/
+              {addLeadingZero(questions.length)}
+            </span>
+          </div>
+          <h2>{question}</h2>
+          <ul>
+            {choices.map((answer, index) => (
+              <li
+                onClick={() => onAnswerSelected(answer, index)}
+                key={answer}
+                className={
+                  selectedAnswerIndex === index ? "selectedAnswer" : null
+                }
+              >
+                {answer}
+              </li>
+            ))}
+          </ul>
+          <div>
+            <button
+              onClick={onClickNext}
+              disabled={selectedAnswerIndex === null}
+            >
+              {activeQuestion === questions.length - 1 ? "Finish!" : "Next!"}
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div className="result">
+          <h3>Results</h3>
+          <p>
+            Total Questions: <span>{questions.length}</span>
+          </p>
+          <p>
+            Total Score: <span>{result.score}</span>
+          </p>
+          <p>
+            Correct Answers: <span>{result.correctAnswers}</span>
+          </p>
+          <p>
+            Wrong Answers: <span>{result.wrongAnswers}</span>
+          </p>
+        </div>
+      )}
     </div>
   );
 };
