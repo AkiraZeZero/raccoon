@@ -17,7 +17,6 @@ const Quiz = () => {
 
   const onClickNext = () => {
     setSelectedAnswerIndex(null);
-    setActiveQuestion((prev) => prev + 1);
     setResult((prev) =>
       selectedAnswer
         ? {
@@ -26,12 +25,12 @@ const Quiz = () => {
             correctAnswers: prev.correctAnswers + 1,
           }
         : { ...prev, wrongAnswers: prev.wrongAnswers + 1 }
-    )
+    );
     if (activeQuestion !== questions.length - 1) {
-        setActiveQuestion((prev) => prev + 1)
+      setActiveQuestion((prev) => prev + 1);
     } else {
-        setActiveQuestion(0)
-        setShowResult(true)
+      setActiveQuestion(0);
+      setShowResult(true);
     }
   };
 
@@ -56,8 +55,8 @@ const Quiz = () => {
             <span className="activeQuestionNumb">
               {addLeadingZero(activeQuestion + 1)}
             </span>
-            <span className="totalQuestion">/
-              {addLeadingZero(questions.length)}
+            <span className="totalQuestion">
+              /{addLeadingZero(questions.length)}
             </span>
           </div>
           <h2>{question}</h2>

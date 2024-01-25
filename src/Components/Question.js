@@ -1,6 +1,7 @@
 const quiz = {
     topic: "Raccoons Server",
     level: "Easy Peasy",
+    totalQuestions: 13,
     perQuestionScore: 1,
     questions:[
     {
