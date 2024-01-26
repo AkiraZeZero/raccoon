@@ -1,5 +1,6 @@
 body {
-  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+  /* background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%); */
+  background-image: linear-gradient(90.04deg, #e0c3fc 0%, #8ec5fc 100%);
   color: #11052c;
   display: flex;
   justify-content: center;
@@ -19,13 +20,15 @@ body {
 .quizBox .activeQuestionNumb {
   font-size: 32px;
   font-weight: 500;
-  color: #800080;
+  color: #cd9cf2;
+  cursor: default;
 }
 
 .quizBox .totalQuestion {
   font-size: 16px;
   font-weight: 500;
   color: #e0dee3;
+  cursor: default;
 }
 
 .quizBox h2 {
@@ -54,12 +57,12 @@ body {
 }
 
 .quizBox ul .selectedAnswer {
-  background: #ffd6ff;
-  border: 1px solid #800080;
+  background: #f6f3ff;
+  border: 1px solid #cd9cf2;
 }
 
 .quizBox button {
-  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   border-radius: 9px;
   font-size: 18px;
   color: #ffffff;

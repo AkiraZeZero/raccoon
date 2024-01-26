@@ -51,7 +51,7 @@ const Quiz = () => {
     <div className="quizBox">
       {!showResult ? (
         <div>
-          <div>
+          <div className="qNumb">
             <span className="activeQuestionNumb">
               {addLeadingZero(activeQuestion + 1)}
             </span>
