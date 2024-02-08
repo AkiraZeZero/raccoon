@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import quiz from "./Question";
+import bad from "../Images/raccoonShot.jpg";
+import okay from "../Images/raccoonStab.jpg";
+import perfect from "../Images/raccoon.jpg";
 
 const Quiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -47,6 +50,7 @@ const Quiz = () => {
 
   const addLeadingZero = (number) => (number > 9 ? number : `0${number}`);
 
+
   return (
     <div className="quizBox">
       {!showResult ? (
@@ -84,6 +88,15 @@ const Quiz = () => {
         </div>
       ) : (
         <div className="result">
+            <div>
+                {}
+            </div>
+            {/* add Raccoon Results w picture
+            Perfect Score: Happy raccoon 20 - 19
+            Great Score: Great Raccoon 18-16
+            Good Score: Fair Raccon 15-11
+            Okay Score: Meh Raccoon 10-5
+            Bad Score: Mad Raccoon 5 or below*/}
           <h3>Results</h3>
           <p>
             Total Questions: <span>{questions.length}</span>
@@ -97,6 +110,7 @@ const Quiz = () => {
           <p>
             Wrong Answers: <span>{result.wrongAnswers}</span>
           </p>
+          {/* add a play again button */}
         </div>
       )}
     </div>
