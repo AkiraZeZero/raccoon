@@ -1,196 +1,136 @@
+import raccoon from "../Images/raccoon.jpg";
+import raccoonShot from "../Images/raccoonShot.jpg";
+import raccoonStab from "../Images/raccoonStab.jpg";
+import raccoonMarg from "../Images/raccoonMarg.jpg";
+
 const quiz = {
   topic: "Raccoons Server",
   level: "Easy Peasy",
-  totalQuestions: 25,
+  totalQuestions: 20,
   perQuestionScore: 1,
   questions: [
     {
-      question: "What is React?",
-      choices: [
-        "Hyper Text Markup Language",
-        "A programming language and core technology of the World Wide Web",
-        "An open-source JavaScript library for building user interfaces",
-        "A framework exclusive to the web",
-      ],
-      correctAnswer:
-        "An open-source JavaScript library for building user interfaces",
+      question: "Who was the first server member?",
+      choices: ["SonicBliss", "AkiraZeZero", "Bees_In_Da_Trap", "Abrillion"],
+      correctAnswer: "AkiraZeZero",
     },
     {
-      question: "What is NOT a reason why ReactJS is popularly used?",
-      choices: [
-        "Allows developers to create reusable components",
-        "Meta/Facebook created it",
-        "ReactJS is a very flexible- multi-purpose library",
-        "The library's ultimately optimized development interface and coding language",
-      ],
-      correctAnswer: "Meta/Facebook created it",
+      question: "Who is the Second admin of the Gaming Raccoons server?",
+      choices: ["AkiraZeZero", "SonicBliss", "Abrillion", "TwistedCrater"],
+      correctAnswer: "SonicBliss",
     },
     {
-      question: "What are the 2 major features of ReactJS?",
-      choices: [
-        "HTML and Bootstrap",
-        "Components and JSX",
-        "HTML and CSS",
-        "Real DOM and Components",
-      ],
-      correctAnswer: "Components and JSX",
+      question: "What is the server mascot?",
+      choices: ["Bee", "Cat", "Raccoon", "Panda"],
+      correctAnswer: "Raccoon",
     },
     {
-      question: "How do you create a React app from scratch?",
+      question: "Why a Raccoon?",
       choices: [
-        "npm create-reactapp@latest myprojectname",
-        "npx createReactApp myProjectName",
-        "npx create-reactapp@latest myprojectname",
-        "npm create react app myProjectName",
+        "We sleep alot",
+        "We are phat",
+        "We live in trash",
+        "We never sleep",
       ],
-      correctAnswer: "npx create-reactapp@latest myprojectname",
+      correctAnswer: "We never sleep",
     },
-    // {
-    //   question: "What is JSX?",
-    //   choices: [
-    //     "",
-    //     "",
-    //     "A syntax extension of JavaScript allowing us to write HTML in a file with JavaScript code",
-    //     "",
-    //   ],
-    //   correctAnswer: "",
-    // },
-    // {
-    //   question: "What is an Element?",
-    //   choices: ["", "", "", ""],
-    //   correctAnswer: "",
-    // },
-    // {
-    //   question: "What is a Component?",
-    //   choices: ["", "", "", ""],
-    //   correctAnswer: "",
-    // },
-    // {
-    //   question: "What is the difference between an Element and a Component?",
-    //   choices: ["Once a Component is created it cannot be mutated", "", "", ""],
-    //   correctAnswer: "Once an Element is created it cannot be mutated",
-    // },
-    // {
-    //   question: "What makes ReactJS different from React Native?",
-    //   choices: ["", "", "", ""],
-    //   correctAnswer: "",
-    // },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   {
-    //     question: "",
-    //     choices: ["", "", "", ""],
-    //     correctAnswer: "",
-    //   },
-    //   Questions below are for raccoons
-    // {
-    //     question: "What is the server mascot?",
-    //     choices: ["Bee", "Cat", "Raccoon", "Panda"],
-    //     correctAnswer: "Raccoon",
-    // },
-    // {
-    //     question: "Who was the first server member?",
-    //     choices: ["SonicBliss", "AkiraZeZero", "Bees_In_Da_Trap", "Abrillion"],
-    //     correctAnswer: "AkiraZeZero",
-    // },
-    // {
-    //     question: "Why a Raccoon?",
-    //     choices: ["We sleep alot", "We are phat", "We live in trash", "We never sleep"],
-    //     correctAnswer: "We never sleep",
-    // },
-    // {
-    //     question: "Who dies most in our Minecraft server?",
-    //     choices: ["AkiraZeZero", "Murkderose", "0_Cato_0", "Dara_run"],
-    //     correctAnswer: "0_Cato_0",
-    // },
-    // {
-    //     question: "What does 'TFT' stand for?",
-    //     choices: ["Team Fight Team", "To Fight Together", "Teams Fighting Together", "Team Fight Tactics"],
-    //     correctAnswer: "Team Fight Tactics",
-    // },
-    // {
-    //     question: "Who is the most hateful member in the server?",
-    //     choices: ["Playboy_Travo", "Bees_In_Da_Trap", "Abrillion", "SonicBliss"],
-    //     correctAnswer: "Bees_In_Da_Trap",
-    // },
-    // {
-    //     question: "What was the first big group game?",
-    //     choices: ["Fall Guys", "Gartic Telephone", "Pokemon Unite", "Minecraft"],
-    //     correctAnswer: "Pokemon Unite",
-    // },
-    // {
-    //     question: "Who made the really big moon in our Minecraft server?",
-    //     choices: ["Bees_In_Da_Trap", "Murkderose", "Playboytravo","SonicBliss" ],
-    //     correctAnswer: "Bees_In_Da_Trap",
-    // },
-    // {
-    //     question: "Who is the youngest member in our server?",
-    //     choices: ["Josue-lacks-a- lot", "Alexa12344", "Taylor","Ryder DaBoss" ],
-    //     correctAnswer: "Alexa12344",
-    // },
-    // {
-    //     question: "What member in our server is the 'Meme-a-saurus'",
-    //     choices: ["Abrillion", "Dara_run", "Alantheonly", "Twistedcrater"],
-    //     correctAnswer: "Abrillion",
-    // },
-    // {
-    //     question: "What pokemon is considered 'Murkderose's' pokemon when playing pokemon unite?",
-    //     choices: ["Lapras", "Goodra", "Slowbro", "Dragonite"],
-    //     correctAnswer: "Goodra",
-    // },
-    // {
-    //     question: "Who NEVER rage quits?",
-    //     choices: ["AkiraZeZero", "0_Cato_0", "Bees_In_Da_Trap", "Playboytravo"],
-    //     correctAnswer: "0_Cato_0",
-    // },
+    {
+      question: "Who is the youngest member in our server?",
+      choices: [
+        "Josue-lacks-a- lot",
+        "Alexa12344",
+        "Tasty_2001",
+        "Ryder DaBoss",
+      ],
+      correctAnswer: "Alexa12344",
+    },
+    {
+      question: "What member in our server is the 'Meme-a-saurus'",
+      choices: ["Abrillion", "Dara_run", "Alantheonly", "Twistedcrater"],
+      correctAnswer: "Abrillion",
+    },
+    {
+      question: "What is a popular pets name in the server?",
+      choices: ["Luna", "Mochi", "Simba", "Fiona"],
+      correctAnswer: "Luna",
+    },
+    {
+      question: "What 5 person game got really popular in our server?",
+      choices: [
+        "Fall Guys",
+        "Gartic Telephone",
+        "Pokemon Unite",
+        "Mario Party",
+      ],
+      correctAnswer: "Pokemon Unite",
+    },
+    {
+      question:
+        "Which of these games, with a voice channel, is NOT a popular played game in our server?",
+      choices: ["Palworld", "Minecraft", "TFT", "Smash Bros"],
+      correctAnswer: "Smash Bros",
+    },
+    {
+      question:
+        "What pokemon is considered 'Murkderose's' pokemon when playing pokemon unite?",
+      choices: ["Lapras", "Goodra", "Slowbro", "Dragonite"],
+      correctAnswer: "Goodra",
+    },
+    {
+      question: "Who NEVER rage quits?",
+      choices: ["Abrillion", "0_Cato_0", "Murkderose", "Dara_run"],
+      correctAnswer: "0_Cato_0",
+    },
+    {
+      question: "Who owns the Minecraft server the Gaming Raccoons play in?",
+      choices: ["AkiraZeZero", "Murkderose", "Playboytravo", "Bees_In_Da_Trap"],
+      correctAnswer: "Bees_In_Da_Trap",
+    },
+    {
+      question: "Who dies the most in our Minecraft server?",
+      choices: ["AkiraZeZero", "Murkderose", "0_Cato_0", "Dara_run"],
+      correctAnswer: "0_Cato_0",
+    },
+    {
+      question: "Who is the most 'hateful' member in the server?",
+      choices: ["Playboytravo", "Bees_In_Da_Trap", "Abrillion", "SonicBliss"],
+      correctAnswer: "Bees_In_Da_Trap",
+    },
+    {
+      question: "Who made a really big moon in our Minecraft server?",
+      choices: ["Bees_In_Da_Trap", "Murkderose", "Playboytravo", "SonicBliss"],
+      correctAnswer: "Bees_In_Da_Trap",
+    },
+    {
+      question: "What does 'TFT' stand for?",
+      choices: [
+        "Team Fight Team",
+        "To Fight Together",
+        "Teams Fighting Together",
+        "Team Fight Tactics",
+      ],
+      correctAnswer: "Team Fight Tactics",
+    },
+    {
+      question: "Who in our server hasn't played TFT?",
+      choices: ["0_Cato_0", "Murkderose", "l3moy", "isthatdesij"],
+      correctAnswer: "l3moy",
+    },
+    {
+      question: "Who owns the Palworld server the Gaming Raccoons play on?",
+      choices: ["SonicBliss", "l3mony", "omydahomie1", "AkiraZeZero"],
+      correctAnswer: "SonicBliss",
+    },
+    {
+      question: "Which member does NOT play palworld?",
+      choices: ["l3mony", "omydahomie1", "TwistedCrater", "0_Cato_0"],
+      correctAnswer: "0_Cato_0",
+    },
+    {
+      question: "Who Created This Quiz?",
+      choices: ["Abrillion", "SonicBliss", "AkiraZeZero", "Dara_run"],
+      correctAnswer: "AkiraZeZero",
+    },
   ],
 };
 
